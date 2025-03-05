@@ -422,7 +422,7 @@ Resources:
   VPCStack:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: https://s3.amazonaws.com/redcap-aws-cloudformation/01-rc-vpc.yaml
+      TemplateURL: https://s3.amazonaws.com/redcaptempbucket/01-rc-vpc.yaml
       Parameters:
         AccessCidr: !Ref 'AccessCidr'
         RedcapS3Bucket: !Ref 'RedcapS3Bucket'
@@ -535,7 +535,7 @@ Resources:
           !Ref HostedZoneName
         DomainName:
           !Ref DomainName
-      TemplateURL: https://s3.amazonaws.com/redcaptempbucket/03-rc-route53.yaml
+      TemplateURL: https://s3.amazonaws.com/redcap-aws-cloudformation/03-rc-route53.yaml
 
 Outputs:
   REDCapURL:
