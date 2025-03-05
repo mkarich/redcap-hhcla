@@ -535,7 +535,7 @@ Resources:
           !Ref HostedZoneName
         DomainName:
           !Ref DomainName
-      TemplateURL: https://s3.amazonaws.com/redcap-aws-cloudformation/03-rc-route53.yaml
+      TemplateURL: https://s3.amazonaws.com/redcaptempbucket/03-rc-route53.yaml
 
 Outputs:
   REDCapURL:
