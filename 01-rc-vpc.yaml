@@ -132,7 +132,7 @@ Resources:
     Type: AWS::EC2::Subnet
     Properties:
       CidrBlock: !Ref d2cidr
-      AvailabilityZone: !Join [ "", [ !Ref 'AWS::Region', "b" ] ]
+      AvailabilityZone: !Join [ "", [ !Ref 'AWS::Region', "c" ] ]
       VpcId: !Ref 'vpc27bc775f'
       Tags:
         - Key: Name
@@ -141,7 +141,7 @@ Resources:
     Type: AWS::EC2::Subnet
     Properties:
       CidrBlock: !Ref a2cidr
-      AvailabilityZone: !Join [ "", [ !Ref 'AWS::Region', "b" ] ]
+      AvailabilityZone: !Join [ "", [ !Ref 'AWS::Region', "c" ] ]
       VpcId: !Ref 'vpc27bc775f'
       Tags:
         - Key: Name
@@ -178,7 +178,7 @@ Resources:
     Type: AWS::EC2::Subnet
     Properties:
       CidrBlock: !Ref p2cidr
-      AvailabilityZone: !Join [ "", [ !Ref 'AWS::Region', "b" ] ]
+      AvailabilityZone: !Join [ "", [ !Ref 'AWS::Region', "c" ] ]
       MapPublicIpOnLaunch: 'True'
       VpcId: !Ref 'vpc27bc775f'
       Tags:
